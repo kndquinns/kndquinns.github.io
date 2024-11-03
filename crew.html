@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./assets/logo.png" sizes="32x32">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+        <title>Space tourism website</title>
+        <script src="navigation.js" defer></script>
+        <script src="tabs.js" defer></script>
+    </head>
+
+    <body class="crew">
+        <a class="skip-to-content" href="#main">Skip to content</a>
+        <header class="primary-header flex">
+            <div>
+                <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only"
+                    aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul class="primary-navigation underline-indicatators flex" data-visible="false">
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+                            href="index.html"><span aria-hidden="true"> 00 </span> Home</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="destination.html"><span
+                                aria-hidden="true"> 01
+                            </span>Destination</a></li>
+                    <li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="crew.html"><span
+                                aria-hidden="true"> 02
+                            </span>Crew</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="technology.html"><span
+                                aria-hidden="true"> 03
+                            </span>Methodology</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="contact.html"><span
+                                aria-hidden="true"> 04
+                            </span>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main" class="grid-container grid-container--crew flow">
+
+            <h1 id="crew-title" class="numbered-title"><span aria-hidden="true">02</span>Meet your crew</h1>
+            <div class="dot-indicatators flex ff-serif" role="tablist" aria-label="crew member list">
+                <button aria-selected="true" role="tab" tabindex="0" data-image="commander-image" aria-controls="commander-tab">I<span class=" sr-only">The commander</span> </button>
+                <button aria-selected="false" role="tab" tabindex="-1" data-image="mission-image" aria-controls="mission-tab">II<span class=" sr-only">The mission specialist</span> </button>
+                <button aria-selected="false" role="tab" tabindex="-1" data-image="pilot-image" aria-controls="pilot-tab">III<span class=" sr-only">The pilot</span> </button>
+                <button aria-selected="false" role="tab" tabindex="-1" data-image="crew-image" aria-controls="crew-tab">IV<span class=" sr-only">The crew engineer</span> </button>
+            </div>
+
+            <article class="crew-info flow" id="commander-tab" role="tabpanel" tabindex="0">
+                <header class="flow flow-space--small">
+                    <h2 class="uppercase fs-600 ff-serif ">Commander</h2>
+                    <p class="uppercase fs-700 ff-serif ">Kevin Quinns</p>
+                </header>
+
+                <p class="text-accent line-space--medium ff-sans-normal">I am a private tutor and have a Masters degree in Science from Yale University, CT. I used to teach in a large school but then I quit that to start working 
+                    independently to achieve my goals and I was soon rewarded with a much better position than before.
+                    I have all sorts of tutoring experience; teaching students from elementary school all the way up to year 12, homeschooled and non-homeschooled, as well as 
+                    college and university students and have had wonderful experiences teaching those students all these years.
+                    <p class="uppercase fs-400 letter-spacing-1 ff-sans-cond ff-serif bottom-space--large">WHY I CHOSE TO TEACH</p><p  class="text-accent line-space--medium">
+                        I grow at seeing my students succeed. I cherish helping them up, watching them and aiding them to grow. 
+                        The immense sense of fulfillment I attain from helping other humans is why I chose this line of work and 
+                        continue it with a passion even today.
+                    </p>
+            </article> 
+
+            <article hidden class="crew-info flow" id="mission-tab" role="tabpanel" tabindex="0">
+                <header class="flow flow-space--small">
+                    <h2 class="uppercase fs-600 ff-serif ">Mission Specialist</h2>
+                    <p class="uppercase fs-700 ff-serif ">The Parent</p>
+                </header>
+
+                <p class="text-accent line-space--medium"> Parents, you are the most important people in a students life. You provide them with support and caregiving, and with love and passion you grow 
+                    them into the pride-bringing heroes they become.
+                    <p class="uppercase fs-400 letter-spacing-1 ff-sans-cond ff-serif space--small ">What parents say</p>
+                    <p class="uppercase fs-300 letter-spacing-2 ff-sans-cond ff-serif bottom-space--small">Maria, Raylando’s Mother</p>
+                    <p class="text-accent line-space--medium fs-300 line-space--small">“Raylando was afraid and had lost confidence in 
+                        his exams and studies. I needed help and fast. Kevin is our tutor and we love him!
+                        His style is crystal clear and he is quite patient, and Raylando’s enthusiasm for Chemistry has returned! 
+                        Fingers crossed an A+ is in the bag!”</p>
+                    <p class="uppercase fs-300 letter-spacing-2 ff-sans-cond ff-serif bottom-space--small ">James, Mary’s Father</p>
+                    <p class="text-accent line-space--medium fs-300 line-space--small">“Mary loves the practical approach you have to tutoring, the tips on how to do well on the test specifically, from how to understand the questions, 
+                        to the ‘pre-test’ study and to what to focus on while preparing. It feels more like he is a coach than a teacher and is very encouraging.”</p>
+                    </p>
+            </article>
+
+
+            <article hidden class="crew-info flow" id="pilot-tab" role="tabpanel" tabindex="0">
+                <header class="flow flow-space--small">
+                    <h2 class="uppercase fs-600 ff-serif ">Pilot</h2>
+                    <p class="uppercase fs-700 ff-serif ">The student</p>
+                </header>
+
+                <p class="text-accent line-space--medium"> At the end, it all boils down to the students effort. What path you take I will help you in and by your own pace, 
+                    with my support, by your determination with my experience to back it up. But you are truly the pilot of your mission.
+                    <p class="uppercase fs-400 letter-spacing-1 ff-sans-cond ff-serif bottom-space--large">My ULTIMATE GOAL</p><p class="text-accent line-space--medium">
+                    My approach to tutoring is to consider every student as an individual and to make learning fun. I believe passionately in the huge value of teaching, 
+                    taking great satisfaction in seeing my students achieve their full potential. Most importantly, I have a passion for the subjects that I teach and I try 
+                    to pass that enthusiasm on to my students too; as a happy student is a successful student.</p></p>
+            </article>
+
+
+            <article hidden class="crew-info flow" id="crew-tab" role="tabpanel" tabindex="0">
+                <header class="flow flow-space--small">
+                    <h2 class="uppercase fs-600 ff-serif ">Flight Engineer</h2>
+                    <p class="uppercase fs-700 ff-serif ">Books & Resources</p>
+                </header>
+
+                <p class="text-accent line-space--medium"> Books act as a light in the midst of the darkness of illiteracy, so we can find knowledge. 
+                    Knowledge is the gateway of success academically and individually and by reading, studying and acquiring knowledge, we blossom and become. 
+                    Books are our lifelong friends, and you can take it from someone who has a bookshelf filled with books 
+                    that they definitely will not let you down in an exam … as long as you’ve read them once or twice.
+                    <p class="uppercase fs-400 letter-spacing-2 ff-sans-cond ff-serif bottom-space--small">My Method</p>
+                    <p class="text-accent line-space--medium fs-300 line-space--small">Students find my techniques very easy to relate to, therefore excelling in their exams. As my student I will teach you 
+                    the principles of the subject whereby you can answer any questions. I will work with you towards your success.
+                    <p class="uppercase fs-400 letter-spacing-2 ff-sans-cond ff-serif bottom-space--small">A lifesaver</p>
+                    <p class="text-accent line-space--medium fs-300 line-space--small">During my teaching, I have helped students when they needed it most, and allowed them to regain their confidence. Students that I have tutored 
+                    have gone from D's to A's and B's, and this honestly is a very rewarding experience.</p>
+            </article>
+
+
+            <picture id="commander-image">
+                <source srcset="assets/a.png" type="image/webp">
+                <img src="assets/a.png" alt="Kevin Quinns">
+            </picture>
+            <picture hidden id="mission-image">
+                <!--<source srcset="assets/crew/.webp" type="image/webp">-->
+                <img src="assets/b.png" alt="Parent's Signatures">
+            </picture>
+            <picture style="column-span:2;" hidden id="pilot-image">
+                <!--<source srcset="assets/crew/.png" type="image/webp">-->
+                <img src="assets/d.png" alt="Flying Student">
+            </picture>
+            <picture hidden id="crew-image">
+                <!--<source srcset="assets/crew/.webp" type="image/webp">-->
+                <img src="assets/e.png" alt="Student using books as stairs">
+            </picture>
+            
+
+
+        </main>
+    </body>
+
+</html>

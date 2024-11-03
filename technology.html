@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./assets/logo.png" sizes="32x32">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+        <title>Space tourism website</title>
+        <script src="navigation.js" defer></script>
+        <script src="tabs.js" defer></script>
+    </head>
+
+    <body class="technology">
+        <a class="skip-to-content" href="#main">Skip to content</a>
+        <header class="primary-header flex">
+            <div>
+                <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only"
+                    aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul class="primary-navigation underline-indicatators flex" data-visible="false">
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+                            href="index.html"><span aria-hidden="true"> 00 </span> Home</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="destination.html"><span
+                                aria-hidden="true"> 01
+                            </span>Destination</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="crew.html"><span
+                                aria-hidden="true"> 02
+                            </span>Crew</a></li>
+                    <li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="technology.html"><span
+                                aria-hidden="true"> 03
+                            </span>Methodology</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="contact.html"><span
+                                aria-hidden="true"> 04
+                            </span>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main" class="grid-container flow grid-container--technology">
+            <h1 id="destination-title" class="numbered-title"><span aria-hidden="true">03</span> Space Launch 101</h1>
+            
+            <div class="flex tab-list circle-indicatators vertical" role="tablist" aria-label="technology list">
+                <button aria-selected="true" role="tab" aria-controls="strategy-tab" tabindex="0"
+                    data-image="strategy-image" class=" uppercase text-accent letter-spacing-2 ff-serif ">1</button>
+                <button aria-selected="false" role="tab" aria-controls="experience-tab" tabindex="-1"
+                    data-image="experience-image" class=" uppercase text-accent letter-spacing-2 ff-serif ">2</button>
+                <button aria-selected="false" role="tab" aria-controls="determination-tab" tabindex="-1"
+                    data-image="determination-image" class=" uppercase text-accent letter-spacing-2 ff-serif ">3</button>
+                <button aria-selected="false" role="tab" aria-controls="technology-tab" tabindex="-1"
+                    data-image="technology-image" class=" uppercase text-accent letter-spacing-2 ff-serif ">4</button>
+            </div>
+            
+            <!-- STRATEGY -->
+            <article class="flow technology-info flow-center line-space--large" role="tabpanel" id="strategy-tab" tabindex="0">
+                <header class="flow flow-space--medium">
+                    <p class="uppercase fs-400 text-accent letter-spacing-1 ff-sans-cond ff-serif ">The terminology ...</p>
+                    <p class=" bottom-space--large uppercase fs-700 ff-serif ">STRATEGY</p>
+                </header>
+                <p class="text-accent ff-sans-normal padding-center">I use specific strategic methods that best suit each students individual learning style and thus helps with resolving their personal weaknesses. Letting them bloom by 
+                    getting the student excited about the subject and letting the students enthusiasm towards science and math sprout so they take the matter in hand. I analyze tough subjects and complex formulas into a simple, understandable form and as students spend more time with me, they gain that ability themselves.</p>
+            </article>
+
+            <!-- EXPERIENCE -->
+            
+            <article hidden class="flow technology-info flow-center line-space--large" role="tabpanel" id="experience-tab" tabindex="0">
+                <header class="flow flow-space--medium">
+                    <p class="uppercase fs-400 text-accent letter-spacing-1 ff-sans-cond ff-serif ">The terminology ...</p>
+                    <p class=" bottom-space--large uppercase fs-700 ff-serif ">EXPERIENCE</p>
+                </header>
+                <p class="text-accent ff-sans-normal padding-center">As a private tutor, I have experience handling even the most difficult subjects like math, physics and genetics which are parts of science where students are usually the weakest. I am an experienced teacher who has taught over 2500+ students during the past years. 
+                    Most of these students had no knowledge whatsoever of Science or Math and did not know the basics of Mathematics or Science. I have taught hundreds of hours of homeschooled and non-homeschooled students and continue teaching and helping students achieve their future goals even now.</p>
+            </article>
+
+            <!-- DETERMINATION -->
+
+            <article hidden class="flow technology-info flow-center line-space--large" role="tabpanel" id="determination-tab" tabindex="0">
+                <header class="flow flow-space--medium">
+                    <p class="uppercase fs-400 text-accent letter-spacing-1 ff-sans-cond ff-serif ">The terminology ...</p>
+                    <p class=" bottom-space--large uppercase fs-700 ff-serif ">DETERMINATION</p>
+                </header>
+                <p class="text-accent ff-sans-normal padding-center">I assist my students to remove their barriers such as illiteracy and replacing that barrier with their 
+                    own perception and understanding. Nothing is impossible, you just have to work through the problem no matter what it is or how hard it is. From a difficult math exam, to a complex physics formula, to a misunderstanding about molecular biology, you just have to work through it until you get to the core. I believe the key to all this is dedication. There is no reason a student should dislike a specific science unless it has been demonstrated wrongly.</p>
+            </article>
+            <!-- TECHNOLOGY -->
+
+            <article hidden class="flow technology-info flow-center line-space--large" role="tabpanel" id="technology-tab" tabindex="0">
+                <header class="flow flow-space--medium">
+                    <p class="uppercase fs-400 text-accent letter-spacing-1 ff-sans-cond ff-serif ">The terminology ...</p>
+                    <p class=" bottom-space--large uppercase fs-700 ff-serif ">TECHNOLOGY</p>
+                </header>
+                <p class="text-accent ff-sans-normal padding-center">I use an excellent web-conferencing program, where both parties can see and annotate notes and papers, it is an extremely effective tutoring tool. 
+                    Thanks to modern technology and software like Skype & Zoom, online tuition is a lot easier and more productive than face-to-face tuition which brings you the best tutor rather than whoever happens to be available locally.
+                    One of the most important benefits of online classes is that no time is wasted and, it is a lot more convenient.
+                    Feel at home, because you are at home. You can sit in full comfort, sipping lemonade or hot cocoa, 
+                    viewing an online interactive whiteboard and sharing your homework all at the same time. </p>
+            </article>
+            <picture id="strategy-image">
+                <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="the strategy">
+            </picture>
+            <picture hidden id="experience-image">
+                <img src="assets/technology/image-space-capsule-portrait.jpg" alt="experience">
+            </picture>
+            <picture hidden id="determination-image">
+                <img src="assets/technology/image-spaceport-portrait.jpg" alt="determination">
+            </picture>
+            <picture hidden id="technology-image">
+                <img src="assets/technology/Layer 0.png" alt="technology">
+            </picture>
+        </main>
+
+        </body>
+
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./assets/logo.png" sizes="32x32">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+            rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Space tourism website</title>
+        <script src="navigation.js" defer></script>
+        <script src="tabs.js" defer></script>
+    </head>
+
+    <body class="home">
+        <a class="skip-to-content" href="#main">Skip to content</a>
+        <header class="primary-header flex">
+            <div>
+                <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"> <span class="sr-only"
+                    aria-expanded="false">Menu</span></button>
+            <nav>
+                <ul class="primary-navigation underline-indicatators flex" data-visible="false">
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+                            href="index.html"><span aria-hidden="true"> 00 </span> Home</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="destination.html"><span
+                                aria-hidden="true"> 01
+                            </span>Destination</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="crew.html"><span
+                                aria-hidden="true"> 02
+                            </span>Crew</a></li>
+                    <li><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="technology.html"><span
+                                aria-hidden="true"> 03
+                            </span>Methodology</a></li>
+                    <li class="active"><a class="uppercase text-white letter-spacing-2 ff-sans-cond" href="contact.html"><span
+                                aria-hidden="true"> 04
+                            </span>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main" class="grid-container grid-container--contact">
+            <div style="margin-bottom: 7vh;" class="content">
+                <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1 bottom-space--large"> <p class=" bottom-space--large">One more step to takeoff ...</p>
+                    <span class="d-block ff-serif fs-800 text-white">Contact</span>
+                </h1>
+
+                <p class="text-accent ff-sans-normal line-space--large"> Without a captain to the crew, there's no takeoff !  
+                    Feel free to ask me any questions you may have or reach out for just some friendly advice, together we'll get this rocket going to the moon and planets beyond ! </p>
+                <ul class="li-none text-accent ff-sans-normal line-space--large">
+                    <li><a class = "text-decnone text-accent ff-sans-normal" href="mailto:kevinquinns12@gmail.com?subject=Enquiry"><i class="fa fa-envelope" style="padding-right: 1rem;"></i>Email: kevinquinns12@gmail.com</a></li>
+                    <li><a class = "text-decnone text-accent ff-sans-normal" href="https://www.facebook.com/profile.php?id=100081440747190"><i class="fa fa-facebook" style="padding-right: 1.5rem;"></i>Facebook: Kevin Quinns</a></li>
+                    <li><a class = "text-decnone text-accent ff-sans-normal" href="https://join.skype.com/invite/Jdc1eYiO6FmP"><i class="fa fa-skype" style="padding-right: 1.2rem;"></i>Skype Id: live:nzjew</a></li>
+                </ul>
+            </div>
+            <div class="form fcontainer ">
+            <form class="" method="post" enctype="text/plain" action="mailto:kevinquinns12@gmail.com?subject=Enquiry">
+                    <input type="text" placeholder="Name:" name="name" id="name" /><br>
+                    <input type="text" placeholder="Email:" name="email" id="email" /><br>
+                    <textarea name="message" name="message" id="message"  rows="7" cols="35">Send me a message !</textarea><br>
+                    <a  target="_top" href="mailto:kevinquinns12@gmail.com?subject=Enquiry" class="ff-serif text-dark bg-white ">Email me !</a><br>
+                    <input type="reset"  name="reset" value="Clear Form" class="uppercase ff-serif text-dark"/>
+            </form>
+            <!--<div class="drops">
+                <div class="drop drop-1"></div>
+                <div class="drop drop-2"></div>
+                <div class="drop drop-3"></div>
+                <div class="drop drop-4"></div>
+                <div class="drop drop-5"></div>-->
+            </div>
+        </div>
+        </main>
+    </body>
+
+</html>
